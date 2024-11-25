@@ -26,8 +26,8 @@ importers:
         specifier: ^1.12.0
         version: 1.12.0(typescript@5.6.3)
       '@mysten/wallet-standard':
-        specifier: ^0.13.7
-        version: 0.13.7(typescript@5.6.3)
+        specifier: ^0.13.14
+        version: 0.13.14(typescript@5.6.3)
       '@radix-ui/react-select':
         specifier: ^2.1.2
         version: 2.1.2(@types/react-dom@18.3.1)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -390,6 +390,13 @@ packages:
   '@mysten/sui@1.12.0':
     resolution: {integrity: sha512-DrSyja04xyGrTGlIQKMwZ6MywxNPkjyIcDLm915Zisoy1/uIgPoHc4cx53JyiG92z/HgowTVGGCCIzH53DIYXA==}
     engines: {node: '>=18'}
+
+  '@mysten/sui@1.15.0':
+    resolution: {integrity: sha512-vuyKtb3dY3X6HYzSz/DjoNMQs0zqIWscR2W0lbcYyPOFQZ4lHpzLZszgQor+OGb6uMr7M4COIWKVaIJ82Bbt8w==}
+    engines: {node: '>=18'}
+
+  '@mysten/wallet-standard@0.13.14':
+    resolution: {integrity: sha512-pxrWW6znZRc1WvkgE4YtI1adOv7ws53qDpGOp93bLeKB8bY/lS2ieM05J8n/KvzsuFoIcbrXGuufx9FFpO0xGw==}
 
   '@mysten/wallet-standard@0.13.7':
     resolution: {integrity: sha512-FXlqn3Gp4E7aQf33rZQfaCEUeEq9TbmkIFA7kX/Yab5SC5892XVhkLRu040eBs8Cest98jFUZ2ZJ4YWR+a7e5g==}
@@ -3195,6 +3202,34 @@ snapshots:
       graphql: 16.9.0
       tweetnacl: 1.0.3
       valibot: 0.36.0
+    transitivePeerDependencies:
+      - '@gql.tada/svelte-support'
+      - '@gql.tada/vue-support'
+      - typescript
+
+  '@mysten/sui@1.15.0(typescript@5.6.3)':
+    dependencies:
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
+      '@mysten/bcs': 1.1.0
+      '@noble/curves': 1.6.0
+      '@noble/hashes': 1.5.0
+      '@scure/bip32': 1.5.0
+      '@scure/bip39': 1.4.0
+      '@suchipi/femver': 1.0.0
+      bech32: 2.0.0
+      gql.tada: 1.8.10(graphql@16.9.0)(typescript@5.6.3)
+      graphql: 16.9.0
+      tweetnacl: 1.0.3
+      valibot: 0.36.0
+    transitivePeerDependencies:
+      - '@gql.tada/svelte-support'
+      - '@gql.tada/vue-support'
+      - typescript
+
+  '@mysten/wallet-standard@0.13.14(typescript@5.6.3)':
+    dependencies:
+      '@mysten/sui': 1.15.0(typescript@5.6.3)
+      '@wallet-standard/core': 1.0.3
     transitivePeerDependencies:
       - '@gql.tada/svelte-support'
       - '@gql.tada/vue-support'
