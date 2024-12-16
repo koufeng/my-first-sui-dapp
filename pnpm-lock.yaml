@@ -23,8 +23,8 @@ importers:
         specifier: ^0.14.26
         version: 0.14.26(@tanstack/react-query@5.59.15(react@18.3.1))(@types/react-dom@18.3.1)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.3)
       '@mysten/sui':
-        specifier: ^1.12.0
-        version: 1.12.0(typescript@5.6.3)
+        specifier: ^1.17.0
+        version: 1.17.0(typescript@5.6.3)
       '@mysten/wallet-standard':
         specifier: ^0.13.7
         version: 0.13.7(typescript@5.6.3)
@@ -381,6 +381,9 @@ packages:
   '@mysten/bcs@1.1.0':
     resolution: {integrity: sha512-yy9/1Y4d0FlRywS1+9ze/T7refCbrvwFwJIOKs9M3QBK1njbcHZp+LkVeLqBvIJA5eZ3ZCzmhQ1Xq4Sed5mEBA==}
 
+  '@mysten/bcs@1.2.0':
+    resolution: {integrity: sha512-LuKonrGdGW7dq/EM6U2L9/as7dFwnhZnsnINzB/vu08Xfrj0qzWwpLOiXagAa5yZOPLK7anRZydMonczFkUPzA==}
+
   '@mysten/dapp-kit@0.14.26':
     resolution: {integrity: sha512-p/SKyvb7BPhV7Mfl0me67m5I3URbgOGlG1dkt0sNsEJg1JcOmVcmyYOPepLFT3aTuFu/km/w0SIVfz7EMD4a7Q==}
     peerDependencies:
@@ -389,6 +392,10 @@ packages:
 
   '@mysten/sui@1.12.0':
     resolution: {integrity: sha512-DrSyja04xyGrTGlIQKMwZ6MywxNPkjyIcDLm915Zisoy1/uIgPoHc4cx53JyiG92z/HgowTVGGCCIzH53DIYXA==}
+    engines: {node: '>=18'}
+
+  '@mysten/sui@1.17.0':
+    resolution: {integrity: sha512-vL6QrH3l10dTatimPmz/feqMbYfEjvh8MPf3Xwn5tjuwDwBCS0ha1kdN+4vUpu6t0aCFviK+Df/vanORS8cbGQ==}
     engines: {node: '>=18'}
 
   '@mysten/wallet-standard@0.13.7':
@@ -1216,6 +1223,10 @@ packages:
 
   '@scure/bip39@1.4.0':
     resolution: {integrity: sha512-BEEm6p8IueV/ZTfQLp/0vhw4NPnT9oWf5+28nvmeUICjP99f4vr2d+qc7AVGDDtwRep6ifR43Yed9ERVmiITzw==}
+
+  '@simplewebauthn/typescript-types@7.4.0':
+    resolution: {integrity: sha512-8/ZjHeUPe210Bt5oyaOIGx4h8lHdsQs19BiOT44gi/jBEgK7uBGA0Fy7NRsyh777al3m6WM0mBf0UR7xd4R7WQ==}
+    deprecated: This package has been renamed to @simplewebauthn/types. Please install @simplewebauthn/types instead to ensure you receive future updates.
 
   '@suchipi/femver@1.0.0':
     resolution: {integrity: sha512-bprE8+K5V+DPX7q2e2K57ImqNBdfGHDIWaGI5xHxZoxbKOuQZn4wzPiUxOAHnsUr3w3xHrWXwN7gnG/iIuEMIg==}
@@ -2063,6 +2074,9 @@ packages:
     resolution: {integrity: sha512-2yTgeWTWzMWkHu6Jp9NKgePDaYHbntiwvYuuJLbbN9vl7DC9DvXKOB2BC3ZZ92D3cvV/aflH0osDfwpHepQ53w==}
     hasBin: true
 
+  jose@5.9.6:
+    resolution: {integrity: sha512-AMlnetc9+CV9asI19zHmrgS/WYsWUwCn2R7RzlbJWD7F9eWYUTGyBmU9o6PxngtLGOiDGPRu+Uc4fhKzbpteZQ==}
+
   js-cookie@2.2.1:
     resolution: {integrity: sha512-HvdH2LzI/EAZcUwA8+0nKNtWHqS+ZmijLA30RwZA0bo7ToCckjK5MkGhjED9KoRcXO6BaGI3I9UIzSA1FKFPOQ==}
 
@@ -2345,6 +2359,9 @@ packages:
     resolution: {integrity: sha512-ynVpBwZampRH3YWLwRepZpQ7X3MvpwLIaqIdFEeBYEhaXbHmEx2KqOdxGV4T54wvKBhH3LixvU1j1bK4/sq7Tw==}
     engines: {node: '>=12.0.0'}
     hasBin: true
+
+  poseidon-lite@0.2.1:
+    resolution: {integrity: sha512-xIr+G6HeYfOhCuswdqcFpSX47SPhm0EpisWJ6h7fHlWwaVIvH3dLnejpatrtw6Xc6HaLrpq05y7VRfvDmDGIog==}
 
   postcss-import@15.1.0:
     resolution: {integrity: sha512-hpr+J05B2FVYUAXHeK1YyI267J/dDDhMU6B6civm8hSY1jYJnBXxzKDKDswzJmtLHryrjhnDjqqp/49t8FALew==}
@@ -3156,6 +3173,10 @@ snapshots:
     dependencies:
       bs58: 6.0.0
 
+  '@mysten/bcs@1.2.0':
+    dependencies:
+      bs58: 6.0.0
+
   '@mysten/dapp-kit@0.14.26(@tanstack/react-query@5.59.15(react@18.3.1))(@types/react-dom@18.3.1)(@types/react@18.3.11)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.6.3)':
     dependencies:
       '@mysten/sui': 1.12.0(typescript@5.6.3)
@@ -3193,6 +3214,28 @@ snapshots:
       bech32: 2.0.0
       gql.tada: 1.8.10(graphql@16.9.0)(typescript@5.6.3)
       graphql: 16.9.0
+      tweetnacl: 1.0.3
+      valibot: 0.36.0
+    transitivePeerDependencies:
+      - '@gql.tada/svelte-support'
+      - '@gql.tada/vue-support'
+      - typescript
+
+  '@mysten/sui@1.17.0(typescript@5.6.3)':
+    dependencies:
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.9.0)
+      '@mysten/bcs': 1.2.0
+      '@noble/curves': 1.6.0
+      '@noble/hashes': 1.5.0
+      '@scure/bip32': 1.5.0
+      '@scure/bip39': 1.4.0
+      '@simplewebauthn/typescript-types': 7.4.0
+      '@suchipi/femver': 1.0.0
+      bech32: 2.0.0
+      gql.tada: 1.8.10(graphql@16.9.0)(typescript@5.6.3)
+      graphql: 16.9.0
+      jose: 5.9.6
+      poseidon-lite: 0.2.1
       tweetnacl: 1.0.3
       valibot: 0.36.0
     transitivePeerDependencies:
@@ -4136,6 +4179,8 @@ snapshots:
       '@noble/hashes': 1.5.0
       '@scure/base': 1.1.9
 
+  '@simplewebauthn/typescript-types@7.4.0': {}
+
   '@suchipi/femver@1.0.0': {}
 
   '@swc/core-darwin-arm64@1.7.36':
@@ -4987,6 +5032,8 @@ snapshots:
 
   jiti@1.21.6: {}
 
+  jose@5.9.6: {}
+
   js-cookie@2.2.1: {}
 
   js-git@0.7.8:
@@ -5296,6 +5343,8 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
+
+  poseidon-lite@0.2.1: {}
 
   postcss-import@15.1.0(postcss@8.4.47):
     dependencies:
